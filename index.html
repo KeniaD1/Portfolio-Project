@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./app.js"></script>
+    <title>Kenia's Boutique</title>
+</head>
+
+<body>
+    <header></header>
+    <div class="container">
+        <div class="wrapper">
+            <div class="box-a">
+
+                <section>
+
+
+                    <div class=" bag-with-text">
+                        <img src="https://galoresunshine.com/cdn/shop/products/PURSE.jpg?v=1650197889"
+                            alt="Protect Black Women Mini Tote" width="300" height="300">
+                        <h2> </h2>
+
+                        <form action="bag_inventory" method="post">
+                            <button id="stock" type="button">InStock</button>
+
+                            <button id='rmv' type="button" onclick="alert('Removing item')">Remove</button>
+
+
+                        </form>
+                    </div>
+
+
+                    <!--  add color options buttons -->
+                    <div class=" bag-with-text">
+                        <img src="https://cdn.shopify.com/s/files/1/0527/8626/6275/products/68022_2.jpg?v=1611572916&width=1440"
+                            alt="Crocodile Purse" width="300" height="300">
+                        <h2> </h2>
+
+                        <form action="bag_inventory2" method="post">
+                            <button id="stock" type="button">InStock</button>
+                            <button id='rmv' type="button" onclick="alert('Removing item')">Remove</button>
+
+
+                        </form>
+                    </div>
+                    <div class=" bag-with-text">
+                        <img src="https://cdn.shopify.com/s/files/1/0943/8496/products/Soft_leather_handbag.jpg?v=1675914156"
+                            alt=" Purse" width="300" height="300">
+                        <h2> </h2>
+
+                        <form action="bag_inventory2" method="post">
+                            <button id="stock" type="button">InStock</button>
+                            <button id='rmv' type="button" onclick="alert('Removing item')">Remove</button>
+
+                        </form>
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="box-b">
+                <h3> Add Bag</h3>
+                <form class='add-BAG' action="add to cart" method="post">
+                    <input id="form1" type="text" name="name" placeholder="Bag Name" required>
+                    <br>
+                    <input id="form2" type="number" name="price" placeholder="Bag Price" required>
+                    <br>
+                    <input id="form3" type="text" name="image" placeholder="Insert Bag Url" required>
+                    <br>
+                    <label>
+                        InStock <br>
+                        <select id="instock">
+                            <option value="InStock">InStock</option>
+                            <option value="Out of Stock">Out of Stock</option>
+                        </select>
+                        <br>
+                    </label>
+                    <br>
+                    <label>
+                        Color : <br>
+                        <input type="color" name='color'>
+                    </label>
+                    <br>
+
+                    <input type="submit" onclick="alert('Submitting item ')"></input>
+
+                    <!-- <button type="button" onclick="alert('Resetting page')">Reset</button> -->
+                    <input type="reset">
+
+                </form>
+            </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+header {
+    text-align: center;
+}
+
+body {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.container {
+    height: 400px;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: 80.667% 20.334%;
+}
+
+.box {
+    background-color: rgba(49, 110, 154, 0.707);
+    color: #090909;
+    padding: 3em;
+}
+
+.box1{
+    text-align: right;
+    background-color: blue;
+}
