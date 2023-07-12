@@ -10,9 +10,16 @@ const options = {
 
 fetch('https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=4209&limit=48&country=US&sort=freshness&currency=USD&sizeSchema=US&lang=en-US', options)
     .then((response) => response.json())
-    .then((jsonResponse) => renderProducts(jsonResponse.products))
+    .then((jsonResponse) => renderProducts(jsonResponse.products[6]))
 
 
 function renderProducts(arrayOfProductObjs) {
-    console.log(arrayOfProductObjs[6])
+    let imageLink = arrayOfProductObjs.imageUrl
+    // console.log(imageLink)
+    const image = document.querySelector('.bag-with-text')
+    let imageUrl = document.createElement('img')
+    imageUrl.src = imageLink
+image.append(imageUrl)
+
 }
+
