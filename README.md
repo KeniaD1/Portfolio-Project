@@ -15,3 +15,6 @@ The user has access to a form to submit and the form submit to existing page .
 
 Deployed Page
  https://keniad1.github.io/Portfolio-Project/
+
+ External Api source 
+ https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&c
