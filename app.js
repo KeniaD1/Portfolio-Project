@@ -35,3 +35,32 @@ function renderProducts(arrayOfProductObjs) {
     name3.append(productLabel3)
 }
 
+const allRemoveButtons = document.querySelectorAll('#rmv');
+
+for (const rmvBttn of allRemoveButtons) {
+    rmvBttn.addEventListener('click', (event) => {
+        alert('Removing item');
+        event.target.parentNode.parentNode.remove();
+        //newItem.remove();
+    })
+}
+
+let instockOrOutstock = true
+
+const allInstockButtons = document.querySelectorAll('#stock')
+
+for (const stockBttn of allInstockButtons) {
+    stockBttn.addEventListener('click', () => {
+
+        instockOrOutstock = !instockOrOutstock
+
+        if (instockOrOutstock) {
+            stockBttn.innerText = "InStock"
+            stockBttn.style.backgroundColor = 'white'
+        } else {
+            stockBttn.innerText = "Out Of Stock"
+            stockBttn.style.backgroundColor = 'red'
+        }
+
+    })
+}

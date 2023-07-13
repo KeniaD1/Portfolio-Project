@@ -33,6 +33,12 @@ form {
     display: grid;
 }
 
+button{
+    padding: 10px 15px;
+    border-radius: 4px;
+    display:inline-block;
+}
+
 
 @media (max-width: 768px) {
     .wrapper {
