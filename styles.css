@@ -1,3 +1,50 @@
-header{
+header {
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    color: rgb(105, 138, 255);
     text-align: center;
+}
+
+body {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 66.667% 33.334%;
+}
+
+.box-a {
+    background-color: rgba(133, 186, 242, 0.243);
+    color: #090909;
+    padding: 3em;
+}
+
+.box-b {
+    text-align: right;
+    background-color: color(srgb rgb(0, 149, 255) green blue);
+}
+
+form {
+    display: grid;
+}
+
+
+@media (max-width: 768px) {
+    .wrapper {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .box-b {
+        text-align: center;
+    }
+
+    .box-a {
+        text-align: center;
+    }
 }
