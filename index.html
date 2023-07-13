@@ -21,7 +21,7 @@
                 <section>
 
 
-                    <div class=" bag-with-text">
+                    <div class=" item-with-text">
                         <img src="https://images.asos-media.com/products/converse-chuck-taylor-all-star-hi-tie-dye-sneakers-in-lilac/204792324-1-purple?$n_750w$&wid=750&hei=750&fit=crop"
                             alt="converse" width="300" height="300">
                         <h2> </h2>
@@ -37,24 +37,23 @@
 
 
                     <!--  add color options buttons -->
-                    <div class=" bag-with-text">
-                        <img src="https://cdn.shopify.com/s/files/1/0527/8626/6275/products/68022_2.jpg?v=1611572916&width=1440"
-                            alt="Crocodile Purse" width="300" height="300">
-                        <h2> </h2>
+                    <div class=" item-with-text">
+                        <img src="https://images.vans.com/is/image/Vans/VN0007P2_TWB_HERO?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0"
+                            alt="Vans" width="300" height="300">
+                        <h2 id="2"> </h2>
 
-                        <form action="bag_inventory2" method="post">
+                        <form action="inventory2" method="post">
                             <button id="stock" type="button">InStock</button>
                             <button id='rmv' type="button" onclick="alert('Removing item')">Remove</button>
 
 
                         </form>
                     </div>
-                    <div class=" bag-with-text">
-                        <img src="https://cdn.shopify.com/s/files/1/0943/8496/products/Soft_leather_handbag.jpg?v=1675914156"
-                            alt=" Purse" width="300" height="300">
-                        <h2> </h2>
+                    <div class=" item-with-text">
+                        <img src="" alt=" Purse" width="300" height="300">
+                        <h2 id="3"> </h2>
 
-                        <form action="bag_inventory2" method="post">
+                        <form action="inventory3" method="post">
                             <button id="stock" type="button">InStock</button>
                             <button id='rmv' type="button" onclick="alert('Removing item')">Remove</button>
 
@@ -65,8 +64,8 @@
 
 
             <div class="box-b">
-                <h3> Add Bag</h3>
-                <form class='add-BAG' action="add to cart" method="post">
+                <h3> Add Item</h3>
+                <form class='add-Item' action="add to cart" method="post">
                     <input id="form1" type="text" name="name" placeholder="Bag Name" required>
                     <br>
                     <input id="form2" type="number" name="price" placeholder="Bag Price" required>

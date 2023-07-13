@@ -19,13 +19,19 @@ function renderProducts(arrayOfProductObjs) {
 
 
     const name = document.querySelector('h2')
-    let productCode = document.createElement('h3')
-    productCode = arrayOfProductObjs[12].name
+    let productLabel = document.createElement('h3')
+    productLabel = arrayOfProductObjs[12].name
     // productCode.innerText = 'Product Code'
-    name.append(productCode)
+    name.append(productLabel)
 
+    const name2 = document.getElementById('2')
+    let productLabel2 = document.createElement('h3')
+    productLabel2 = arrayOfProductObjs[45].name
+    name2.append(productLabel2)
 
-
-
+    const name3 = document.getElementById('3')
+    let productLabel3 = document.createElement('h3')
+    productLabel3 = arrayOfProductObjs[24].name
+    name3.append(productLabel3)
 }
 
